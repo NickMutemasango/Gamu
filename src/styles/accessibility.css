@@ -1,0 +1,76 @@
+/* Base Accessibility Controls */
+.accessibility-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accessibility-controls button {
+  padding: 8px 12px;
+  border: 2px solid #2c3e50;
+  background: white;
+  color: #2c3e50;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 40px;
+}
+
+.accessibility-controls button:hover,
+.accessibility-controls button:focus {
+  background: #2c3e50;
+  color: white;
+  outline: none;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --primary-text: #000000;
+  --secondary-text: #333333;
+  --primary-bg: #FFFFFF;
+  --secondary-bg: #EEEEEE;
+  --accent-color: #FF0000;
+  --border-color: #000000;
+}
+
+.high-contrast body {
+  color: var(--primary-text);
+  background: var(--primary-bg);
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast select {
+  border: 2px solid var(--border-color) !important;
+}
+
+/* Focus States (Enhanced for keyboard navigation) */
+*:focus {
+  outline: 3px solid #4D90FE;
+  outline-offset: 2px;
+}
+
+.high-contrast *:focus {
+  outline: 3px solid var(--accent-color) !important;
+}
+
+/* Screen Reader Only Class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
