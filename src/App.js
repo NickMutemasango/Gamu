@@ -613,7 +613,7 @@ if (showPaymentSuccess) {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-        <h1 className="text-xl font-bold">MOUTH-WATERING RESTAURANT</h1>
+        <h1 className="text-xl font-bold">Gourmet Express</h1>
         <div className="relative">
           <button 
             className={`${buttonClasses} p-2 rounded-lg flex items-center`}
@@ -713,7 +713,7 @@ if (showPaymentSuccess) {
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-3xl font-bold mb-2">
-              <span className={accentColor}>Gourmet</span> Express
+              <span className={accentColor}>Mouth</span> Watering
             </h1>
             <p className="text-lg">Delicious food, delivered fast</p>
           </div>
