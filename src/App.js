@@ -613,7 +613,7 @@ if (showPaymentSuccess) {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-        <h1 className="text-xl font-bold">Gourmet Express</h1>
+        <h1 className="text-xl font-bold">MOUTH-WATERING RESTAURANT</h1>
         <div className="relative">
           <button 
             className={`${buttonClasses} p-2 rounded-lg flex items-center`}
@@ -953,7 +953,7 @@ if (showPaymentSuccess) {
                   </button>
                 </div>
               </div>
-            ))}
+            ))}Go
           </div>
           
           <button
